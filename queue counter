@@ -1,0 +1,15 @@
+int peopleCount;
+int time = 10;
+int result;
+int hour;
+int min;
+
+Console.WriteLine("Здравствуйте! Эта программа расчитает за Вас сколько Вам ждать в очереди.");
+Console.WriteLine("Итак...Сколько перед Вами людей?");
+peopleCount = Convert.ToInt32(Console.ReadLine());
+result = peopleCount * time;
+hour = Convert.ToInt32(result) / 60;
+min = Convert.ToInt32(result) % 60;
+
+Console.WriteLine($"Вам осталось ждать - {hour} часов, {min} минут.");
+Console.ReadKey();
